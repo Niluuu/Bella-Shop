@@ -1,0 +1,67 @@
+#popup-card .modal-content {
+  position: absolute;
+  top: 110px;
+  left: 100%;
+}
+
+#popup-card .modal-content::before {
+  content: '';
+  position: absolute;
+  top: -9px;
+  right: 50px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #e9e9e9;
+}
+
+.modal-content {
+  box-shadow: none !important;
+  border: 3px solid #e9e9e9;
+  border-radius: 0% !important;
+}
+
+#popup-card  .modal-footer {
+  position: relative;
+}
+
+#popup-card  .modal-footer .container {
+  display: flex;
+  justify-content: start;
+}
+
+#popup-card .btn-theme {
+  padding: 12px 20px !important; 
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 0%;
+  line-height: normal !important;
+}
+
+#popup-card .media-body {
+  margin: 0 auto;
+}
+
+#popup-card .modal-body{
+  border-top: 1px solid #e5e5e5;
+}
+
+#popup-card .media {
+  display: flex;
+}
+
+#popup-card .item-price {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+#popup-card .subtotal {
+  display: flex;
+  justify-content: space-between;
+}
+
+#popup-card .pull-right {
+  position: relative !important;
+  float: right;
+}

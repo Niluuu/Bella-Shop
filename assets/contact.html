@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Bella Shop</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" media="screen" href="./css/bootstrap.css" />
+  <link rel="stylesheet" href="./css/theme.css">
+  <link rel="stylesheet" href="./css/modal.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
+  <link rel="stylesheet" href="css/animate.css">
+  <!-- SLIDER -->
+  <link rel="stylesheet" type="text/css" href="./css/slik.css"/>
+  <link rel="stylesheet" type="text/css" href="./css/slik-theme.css"/>
+  <link rel="stylesheet" href="./css/responsive.css">
+</head>
+<body>
+
+   
+<div class="content content-area">
+  <div class="modal" id="popup-card">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <!-- Modal body -->
+        <div class="modal-body">
+          <div class="card-items">
+            <div class="card-items-inner">
+              <div class="media">
+                <a href="#" class="pull-left"><img src="./img/order-1s.jpg" alt="" class="item-img media-object"></a>
+                <div class="media-body">
+                  <h4 class="media-heading item-title"><a href="">1x Electronic Product</a></h4>
+                  <p class="item-desc">Lorem ipsum dolor</p>
+                </div>
+                <p class="pull-right item-price">$450.00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="modal-body">
+          <div class="media subtotal">
+              <h4 class="media-heading item-title">Subtotal</h4>
+              <p class="pull-right item-price">$450.00</p>
+          </div>
+        </div>
+  
+        <div class="modal-footer">
+          <div class="container">
+              <a href=""  data-dismiss="modal" class="btn btn-theme btn-theme-dark btn-callcheckout">Close</a>
+              <a href="" class="btn btn-theme btn-theme-transparent btn-callcheckout">Checkout</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="top-bar">
+    <div class="container">
+      <div class="top-bar-left">
+        <ul class="list-inline">
+          <li>
+            <a href="#" class="icon-form">
+              <i class="fas fa-user"></i>
+              <span>Login</span>
+            </a>
+          </li>
+            <li>
+            <a href="#" class="icon-form">
+              <i class="fas fa-clipboard"></i>
+              <span>Not a Member? <span class="colored">Sign Up</span></span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="icon-form">
+              <i class="fas fa-envelope"></i>
+              <span>support@yourdomain.com</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="top-bar-right">
+        <ul class="list-inline">
+          <li class="hidden-xs"><a href="">About</a></li>
+          <li class="hidden-xs"><a href="">Blog</a></li>
+          <li class="hidden-xs"><a href="">My Account</a></li>
+          <li class="hidden-xs"><a href="">Contact</a></li>
+          <li class="hidden-xs"><a href="">FAQ</a></li>
+          <li class="hidden-xs"><a href="">My Wishlist</a></li>
+          <li>
+            <a href="" class="dropdown-toggle" data-toggle="dropdown">€ EURO</a>
+            <ul rol="menu" class="dropdown-menu">
+              <li><a href="">€ EURO</a></li>
+              <li><a href="">€ EURO</a></li>
+              <li><a href="">€ EURO</a></li>
+            </ul>
+          </li>
+          <li >
+            <a href="" class="dropdown-toggle" data-toggle="dropdown">Eng
+              <img src="./img/flag.gif" alt="">
+            </a>
+            <ul rol="menu" class="dropdown-menu">
+              <li><img src="./img/flag.gif" alt=""><a href="">€ EURO</a></li>
+              <li><img src="./img/flag.gif" alt=""><a href="">€ EURO</a></li>
+              <li><img src="./img/flag.gif" alt=""><a href="">€ EURO</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <header class="header fixed">
+    <div class="header-wrapper">
+      <div class="container">
+        <div class="logo">
+          <a href="index.html">
+            <img src="./img/logo-bella-shop.png" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="header-search">
+        <input type="text" class="form-control" placeholder="What are you looking?">
+        <button><i class="fa fa-search"></i></button>
+      </div>
+      <div class="header-cart">
+        <div class="cart-wrapper">
+            <a href="#" class="btn btn-theme-transparent hidden-xs hidden-sm"><i class="fa fa-heart"></i></a>
+            <a href="#" class="btn btn-theme-transparent hidden-xs hidden-sm"><i class="fa fa-heart"></i></a>
+            <a href="#" class="btn btn-theme-transparent" data-toggle="modal" data-target="#popup-card">
+              <i class="fa fa-shopping-cart"></i>
+              <span class="hidden-xs">0 item(s) - $0.00</span>
+              <i class="fa fa-angle-down"></i>
+            </a>
+          <a href="#" class="menu-toggle btn btn-theme-transparent " style="display: none;"><i class="fas fa-bars"></i> </a>
+          </div>
+        </div>
+      </div>
+      <div class="navigation-wrapper">
+        <div class="nav-center">
+          <nav class="navigation closed clearfix">
+            <a href="#" class="menu-toggle-close btn" style="display: none;"><i class="fa fa-times"></i></a>
+
+            <ul class="nav sf-menu sf-js-enabled sf-arrows">
+              <li class="dropdown">
+                  <a href="" class="dropdown-toggle know-active" data-toggle="dropdown">
+                    Homepage
+                  </a>
+                  <div class="dropdown-menu">
+                    <ul>
+                      <li><a href="">Home 1</a></li>
+                      <li><a href="">Home 1</a></li>
+                      <li><a href="">Home 1</a></li>
+                    </ul>
+                  </div>
+              </li>
+              <li class="dropdown">
+                    <a href="" class="dropdown-toggle" data-toggle="dropdown" >Homepage</a>
+                    <div class="dropdown-menu">
+                      <ul>
+                        <li><a href="">Home 1</a></li>
+                        <li><a href="">Home 1</a></li>
+                        <li><a href="">Home 1</a></li>
+                      </ul>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="" class="dropdown-toggle" data-toggle="dropdown" >Shop</a>
+                    <div class="dropdown-menu">
+                      <ul>
+                        <li><a href="">Home 1</a></li>
+                        <li><a href="">Home 1</a></li>
+                        <li><a href="">Home 1</a></li>
+                      </ul>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="" class="dropdown-toggle" data-toggle="dropdown" >Blog</a>
+                    <div class="dropdown-menu">
+                      <ul>
+                        <li><a href="">Home 1</a></li>
+                        <li><a href="">Home 1</a></li>
+                        <li><a href="">Home 1</a></li>
+                      </ul>
+                    </div>
+                </li>
+                <li class="dropdown megamenu-link">
+                      <a href="" class="underline dropdown-toggle btn"  data-toggle="dropdown">Featuers</a>
+                      <div class="dropdown-menu megamenu" style=" left: -150%; transform: translate3d(-276px, 38px, 0px);">
+                        <ul class="">
+                          <li>
+                            <div class="col-md-2">
+                              <h4 class="block-title"><span>MOBILES & ACCESSORIES</span></h4>
+                              <ul class="bg-menu thin-menu">
+                                <li><a href="">Mobile Headphones</a></li>
+                                <li><a href="">Mobile Headphones</a></li>
+                                <li><a href="">Mobile Headphones</a></li>
+                                <li><a href="">Mobile Headphones</a></li>
+                                <li><a href="">Mobile Headphones</a></li>
+                              </ul>
+                            </div>
+                            <div class="col-md-2">
+                              <h4 class="block-title"><span> COMPUTERS</span></h4>
+                              <ul class="bg-menu thin-menu" >
+                                <li><a href="">Mobile Headphones</a></li>
+                                <li><a href="">Mobile Headphones</a></li>
+                                <li><a href="">Mobile Headphones</a></li>
+                                <li><a href="">Mobile Headphones</a></li>
+                                <li><a href="">Mobile Headphones</a></li>
+                              </ul>
+                            </div>
+                            <div class="col-md-2">
+                              <h4 class="block-title"><span>Pages</span></h4>
+                              <ul class="bg-menu">
+                                <li><a href="">Mobile</a></li>
+                                <li><a href="">Mobile</a></li>
+                                <li><a href="">Mobile</a></li>
+                                <li><a href="">Mobile</a></li>
+                                <li><a href="">Mobile</a></li>
+                              </ul>
+                            </div>
+                            <div class="col-md-2">
+                              <h4 class="block-title"><span>Header styles</span></h4>
+                              <ul class="bg-menu">
+                                <li><a href="">Mobile Headphones</a></li>
+                                <li><a href="">Mobile Headphones</a></li>
+                                <li><a href="">Mobile Headphones</a></li>
+                                <li><a href="">Mobile Headphones</a></li>
+                                <li><a href="">Mobile Headphones</a></li>
+                              </ul>
+                            </div> 
+                            <div class="col-md-3">
+                              <div class="product-list">
+                                <div class="product media">
+                                  <a href="" class="pull-left media-link">
+                                    <img src="./img/top-sellers-3.jpg" alt="" class="product-img">
+                                    <i class="fas fa-plus"></i>
+                                  </a>
+                                  <div class="product-body media-body">
+                                    <h4 class="product-name media-heading"> <a href="">Electronic Product Header</a> </h4>
+                                    <div class="rating">
+                                        <span class="star"> <i class="far fa-star"></i></span>
+                                        <span class="star"><i class="fas fa-star"></i></span>
+                                        <span class="star"><i class="fas fa-star"></i></span>
+                                        <span class="star"><i class="fas fa-star"></i></span>
+                                        <span class="star"><i class="fas fa-star"></i></span>
+                                      </div>
+                                    <div class="price">
+                                      <ins>$400.00</ins>
+                                      <del>$420.00</del>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="product media">
+                                  <a href="" class="pull-left media-link">
+                                    <img src="./img/top-sellers-3.jpg" alt="" class="product-img">
+                                    <i class="fas fa-plus"></i>
+                                  </a>
+                                  <div class="product-body media-body">
+                                    <h4 class="product-name media-heading"> <a href="">Electronic Product Header</a> </h4>
+                                    <div class="rating">
+                                        <span class="star"> <i class="far fa-star"></i></span>
+                                        <span class="star"><i class="fas fa-star"></i></span>
+                                        <span class="star"><i class="fas fa-star"></i></span>
+                                        <span class="star"><i class="fas fa-star"></i></span>
+                                        <span class="star"><i class="fas fa-star"></i></span>
+                                      </div>
+                                    <div class="price">
+                                      <ins>$400.00</ins>
+                                      <del>$420.00</del>
+                                    </div>
+                                  </div>
+                                </div> 
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                  </li>
+                <li><a href="" class="nav-linked">Computers</a></li>
+                <li><a href="" class="nav-linked"> Mobiles & Accessories</a></li>
+                <li><a href="" class="nav-linked">Home Entertainment</a></li>
+                <li><a href="" class="nav-linked">Contact</a></li>
+                <li><a href="" class="nav-linked">New</a></li>
+                <li><a href="" class="nav-linked link-active">Sale</a></li>
+                <li><a href="" class="nav-linked">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+  </header>
+</div>
+    
+<div class="content-area">
+
+  <!-- BREADCRUMBS -->
+  <section class="page-section breadcrumbs contact">
+      <div class="container">
+          <div class="page-header">
+              <h1>Contact</h1>
+          </div>
+          <ul class="breadcrumb">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Shop</a></li>
+              <li class="active">Contact Us</li>
+          </ul>
+      </div>
+  </section>
+  <!-- /BREADCRUMBS -->
+
+  <!-- PAGE -->
+  <section class="page-section color">
+      <div class="container">
+
+          <div class="row">
+
+              <div class="col-md-4">
+                  <div class="contact-info">
+
+                      <h2 class="block-title"><span>Contact Us</span></h2>
+
+                      <div class="media-list">
+                          <div class="media">
+                              <i class="pull-left fa fa-home"></i>
+                              <div class="media-body">
+                                  <strong>Address:</strong><br>
+                                  987 Main st. New York, NY, 00001, U.S.A
+                              </div>
+                          </div>
+                          <div class="media">
+                              <i class="pull-left fa fa-phone"></i>
+                              <div class="media-body">
+                                  <strong>Telephone:</strong><br>
+                                  (012) 345-7689
+                              </div>
+                          </div>
+                          <div class="media">
+                              <i class="pull-left fa fas fa-envelope"></i>
+                              <div class="media-body">
+                                  <strong>Fax:</strong><br>
+                                  0123456789
+                              </div>
+                          </div>
+                          <div class="media">
+                              <div class="media-body">
+                                  Phasellus pellentesque purus in massa aenean in pede phasellus libero ac tellus pellentesque semper.
+                              </div>
+                          </div>
+                          <div class="media">
+                              <div class="media-body">
+                                  <strong>Customer Service:</strong><br>
+                                  <a href="mailto:hello@bella.com">hello@bella.com</a>
+                              </div>
+                          </div>
+                          <div class="media">
+                              <div class="media-body">
+                                  <strong>Returns and Refunds:</strong><br>
+                                  <a href="mailto:hello@bella.com">hello@bella.com</a>
+                              </div>
+                          </div>
+                      </div>
+
+                  </div>
+              </div>
+
+              <div class="col-md-8 text-left">
+
+                  <h2 class="block-title"><span>Contact Form</span></h2>
+
+                  <!-- Contact form -->
+                  <form name="contact-form" method="post" action="#" class="contact-form" id="contact-form">
+
+                      <div class="outer required">
+                          <div class="form-group af-inner">
+                              <label class="sr-only" for="name">Name</label>
+                              <input type="text" name="name" id="name" placeholder="Name" value="" size="30" data-toggle="tooltip" title="" class="form-control placeholder" data-original-title="Name is required">
+                          </div>
+                      </div>
+
+                      <div class="outer required">
+                          <div class="form-group af-inner">
+                              <label class="sr-only" for="email">Email</label>
+                              <input type="text" name="email" id="email" placeholder="Email" value="" size="30" data-toggle="tooltip" title="" class="form-control placeholder" data-original-title="Email is required">
+                          </div>
+                      </div>
+
+                      <div class="outer required">
+                          <div class="form-group af-inner">
+                              <label class="sr-only" for="subject">Subject</label>
+                              <input type="text" name="subject" id="subject" placeholder="Subject" value="" size="30" data-toggle="tooltip" title="" class="form-control placeholder" data-original-title="Subject is required">
+                          </div>
+                      </div>
+
+                      <div class="form-group af-inner">
+                          <label class="sr-only" for="input-message">Message</label>
+                          <textarea name="message" id="input-message" placeholder="Message" rows="4" cols="50" data-toggle="tooltip" title="" class="form-control placeholder" data-original-title="Message is required"></textarea>
+                      </div>
+
+                      <div class="outer required">
+                          <div class="form-group af-inner">
+                              <input type="submit" name="submit" class="form-button form-button-submit btn btn-theme btn-theme-dark" id="submit_btn" value="Send message">
+                          </div>
+                      </div>
+
+                  </form>
+                  <!-- /Contact form -->
+
+              </div>
+
+          </div>
+
+      </div>
+  </section>
+  <!-- /PAGE -->
+
+  <!-- PAGE -->
+  <section class="page-section no-padding no-bottom-space">
+      <div class="container full-width">
+
+        <!-- /Google map -->
+
+      </div>
+  </section>
+  <!-- /PAGE -->
+
+</div>
+   
+<footer class="footer">
+  <div class="footer-widgets">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="widget">
+            <div class="widget-title">About Us</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sollicitudin ultrices suscipit. Sed commodo vel mauris vel dapibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <ul class="social-icons">
+              <li><a href=""><i class="fab fa-facebook-f"></i>  </a></li>
+              <li><a href=""><i class="fab fa-twitter"></i></a></li>
+              <li><a href=""><i class="fab fa-instagram"></i></a></li>
+              <li><a href=""><i class="fab fa-telegram-plane"></i></a></li>                    
+            </ul>
+          </div>
+        </div>
+          <div class="col-md-3">
+            <div class="widget widget-tag-cloud">
+                <div class="widget-title">News Letter</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sollicitudin ultrices suscipit.</p>
+                <form action="#">
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Enter Your Mail and Get $10 Cash">
+                  </div>
+                  <div class="buttons form-group">
+                    <button class="btn btn-theme btn-theme-transparents">Subscribe</button>  
+                  </div>
+                </form>
+              </div>
+          </div>
+          <div class="col-md-3">
+            <div class="widget widget-categories">
+              <div class="widget-title">Information</div>
+              <ul>
+                <li><a href=""><i class="fas fa-arrow-circle-right"></i>About Us</a></li>
+                <li><a href=""><i class="fas fa-arrow-circle-right"></i>About Us</a></li>
+                <li><a href=""><i class="fas fa-arrow-circle-right"></i>About Us</a></li>
+                <li><a href=""><i class="fas fa-arrow-circle-right"></i>About Us</a></li>
+                <li><a href=""><i class="fas fa-arrow-circle-right"></i>About Us</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="widget widget-tag-cloud">
+              <div class="widget-title">Item Tags</div>
+              <ul>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Gadgets</a></li>
+                <li><a href="">Electronic</a></li>
+                <li><a href="">Top Sellers</a></li>
+                <li><a href="">shop</a></li>
+                <li><a href="">Top Sellers</a></li>
+                <li><a href="">Supplier</a></li>
+                <li><a href="">Website</a></li>
+                <li><a href="">Isamercan</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-meta">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="copyright">Copyright 2014 BELLA SHOP   |   All Rights Reserved   |   Designed & Developed By</div>
+          <a href="" title="Top HTML Templates">Jthemes Studio</a>
+        </div>
+        <div class="col-sm-6">
+          <div class="payments">
+            <ul>
+              <li><img src="./img/visa.jpg" alt=""></li>
+              <li><img src="./img/paypal.jpg" alt=""></li>
+              <li><img src="./img/mastercard.jpg" alt=""></li>
+              <li><img src="./img/visa.jpg" alt=""></li>
+              <li><img src="./img/paypal.jpg" alt=""></li>
+              <li><img src="./img/mastercard.jpg" alt=""></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+</div>
+<div id="to-top" class="to-top">
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 129 129">
+      <g>
+        <path d="m121.3,34.6c-1.6-1.6-4.2-1.6-5.8,0l-51,51.1-51.1-51.1c-1.6-1.6-4.2-1.6-5.8,0-1.6,1.6-1.6,4.2 0,5.8l53.9,53.9c0.8,0.8 1.8,1.2 2.9,1.2 1,0 2.1-0.4 2.9-1.2l53.9-53.9c1.7-1.6 1.7-4.2 0.1-5.8z"/>
+      </g>
+    </svg>
+</div>
+
+<!-- PRODUCT-MODAL -->
+<div class="modal" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <!-- Modal body -->
+      <div class="modal-body">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <img id="myImage" class="img-responsive" src="" alt="">
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-theme btn-theme-dark btn-callcheckout" data-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+</body>
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="js/theme.js" ></script>
+  <!-- slider -->
+  <script type="text/javascript" src="./js/slick.min.js"></script>
+</html>

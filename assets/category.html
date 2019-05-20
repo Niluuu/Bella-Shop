@@ -1,0 +1,1578 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Bella Shop</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" media="screen" href="./css/bootstrap.css" />
+  <link rel="stylesheet" href="./css/theme.css">
+  <link rel="stylesheet" href="./css/modal.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
+  <link rel="stylesheet" href="css/animate.css">
+  <!-- SLIDER -->
+  <link rel="stylesheet" type="text/css" href="./css/slik.css"/>
+  <link rel="stylesheet" type="text/css" href="./css/slik-theme.css"/>
+  <link rel="stylesheet" href="./css/responsive.css">
+  <link rel="stylesheet" href="./css/range-style.css">
+</head>
+<body>
+  
+<div class="modal" id="popup-card">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <!-- Modal body -->
+      <div class="modal-body">
+        <div class="card-items">
+          <div class="card-items-inner">
+            <div class="media">
+              <a href="#" class="pull-left"><img src="./img/order-1s.jpg" alt="" class="item-img media-object"></a>
+              <div class="media-body">
+                <h4 class="media-heading item-title"><a href="">1x Electronic Product</a></h4>
+                <p class="item-desc">Lorem ipsum dolor</p>
+              </div>
+              <p class="pull-right item-price">$450.00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-body">
+        <div class="media subtotal">
+            <h4 class="media-heading item-title">Subtotal</h4>
+            <p class="pull-right item-price">$450.00</p>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <div class="container">
+            <a href=""  data-dismiss="modal" class="btn btn-theme btn-theme-dark btn-callcheckout">Close</a>
+            <a href="" class="btn btn-theme btn-theme-transparent btn-callcheckout">Checkout</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="top-bar">
+  <div class="container">
+    <div class="top-bar-left">
+      <ul class="list-inline">
+        <li>
+          <a href="#" class="icon-form">
+            <i class="fas fa-user"></i>
+            <span>Login</span>
+          </a>
+        </li>
+          <li>
+          <a href="#" class="icon-form">
+            <i class="fas fa-clipboard"></i>
+            <span>Not a Member? <span class="colored">Sign Up</span></span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="icon-form">
+            <i class="fas fa-envelope"></i>
+            <span>support@yourdomain.com</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="top-bar-right">
+      <ul class="list-inline">
+        <li class="hidden-xs"><a href="">About</a></li>
+        <li class="hidden-xs"><a href="">Blog</a></li>
+        <li class="hidden-xs"><a href="">My Account</a></li>
+        <li class="hidden-xs"><a href="">Contact</a></li>
+        <li class="hidden-xs"><a href="">FAQ</a></li>
+        <li class="hidden-xs"><a href="">My Wishlist</a></li>
+        <li>
+          <a href="" class="dropdown-toggle" data-toggle="dropdown">€ EURO</a>
+          <ul rol="menu" class="dropdown-menu">
+            <li><a href="">€ EURO</a></li>
+            <li><a href="">€ EURO</a></li>
+            <li><a href="">€ EURO</a></li>
+          </ul>
+        </li>
+        <li >
+          <a href="" class="dropdown-toggle" data-toggle="dropdown">Eng
+            <img src="./img/flag.gif" alt="">
+          </a>
+          <ul rol="menu" class="dropdown-menu">
+            <li><img src="./img/flag.gif" alt=""><a href="">€ EURO</a></li>
+            <li><img src="./img/flag.gif" alt=""><a href="">€ EURO</a></li>
+            <li><img src="./img/flag.gif" alt=""><a href="">€ EURO</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<header class="header fixed">
+  <div class="header-wrapper">
+    <div class="container">
+      <div class="logo">
+        <a href="index.html">
+          <img src="./img/logo-bella-shop.png" alt="">
+        </a>
+      </div>
+    </div>
+    <div class="header-search">
+      <input type="text" class="form-control" placeholder="What are you looking?">
+      <button><i class="fa fa-search"></i></button>
+    </div>
+    <div class="header-cart">
+      <div class="cart-wrapper">
+          <a href="#" class="btn btn-theme-transparent hidden-xs hidden-sm"><i class="fa fa-heart"></i></a>
+          <a href="#" class="btn btn-theme-transparent hidden-xs hidden-sm"><i class="fa fa-heart"></i></a>
+          <a href="#" class="btn btn-theme-transparent" data-toggle="modal" data-target="#popup-card">
+            <i class="fa fa-shopping-cart"></i>
+            <span class="hidden-xs">0 item(s) - $0.00</span>
+            <i class="fa fa-angle-down"></i>
+          </a>
+        <a href="#" class="menu-toggle btn btn-theme-transparent " style="display: none;"><i class="fas fa-bars"></i> </a>
+        </div>
+      </div>
+    </div>
+    <div class="navigation-wrapper">
+      <div class="nav-center">
+        <nav class="navigation closed clearfix">
+          <a href="#" class="menu-toggle-close btn" style="display: none;"><i class="fa fa-times"></i></a>
+
+          <ul class="nav sf-menu sf-js-enabled sf-arrows">
+            <li class="dropdown">
+                <a href="" class="dropdown-toggle know-active" data-toggle="dropdown">
+                  Homepage
+                </a>
+                <div class="dropdown-menu">
+                  <ul>
+                    <li><a href="">Home 1</a></li>
+                    <li><a href="">Home 1</a></li>
+                    <li><a href="">Home 1</a></li>
+                  </ul>
+                </div>
+            </li>
+            <li class="dropdown">
+                  <a href="" class="dropdown-toggle" data-toggle="dropdown" >Homepage</a>
+                  <div class="dropdown-menu">
+                    <ul>
+                      <li><a href="">Home 1</a></li>
+                      <li><a href="">Home 1</a></li>
+                      <li><a href="">Home 1</a></li>
+                    </ul>
+                  </div>
+              </li>
+              <li class="dropdown">
+                  <a href="" class="dropdown-toggle" data-toggle="dropdown" >Shop</a>
+                  <div class="dropdown-menu">
+                    <ul>
+                      <li><a href="">Home 1</a></li>
+                      <li><a href="">Home 1</a></li>
+                      <li><a href="">Home 1</a></li>
+                    </ul>
+                  </div>
+              </li>
+              <li class="dropdown">
+                  <a href="" class="dropdown-toggle" data-toggle="dropdown" >Blog</a>
+                  <div class="dropdown-menu">
+                    <ul>
+                      <li><a href="">Home 1</a></li>
+                      <li><a href="">Home 1</a></li>
+                      <li><a href="">Home 1</a></li>
+                    </ul>
+                  </div>
+              </li>
+              <li class="dropdown megamenu-link">
+                    <a href="" class="underline dropdown-toggle btn"  data-toggle="dropdown">Featuers</a>
+                    <div class="dropdown-menu megamenu" style=" left: -150%; transform: translate3d(-276px, 38px, 0px);">
+                      <ul class="">
+                        <li>
+                          <div class="col-md-2">
+                            <h4 class="block-title"><span>MOBILES & ACCESSORIES</span></h4>
+                            <ul class="bg-menu thin-menu">
+                              <li><a href="">Mobile Headphones</a></li>
+                              <li><a href="">Mobile Headphones</a></li>
+                              <li><a href="">Mobile Headphones</a></li>
+                              <li><a href="">Mobile Headphones</a></li>
+                              <li><a href="">Mobile Headphones</a></li>
+                            </ul>
+                          </div>
+                          <div class="col-md-2">
+                            <h4 class="block-title"><span> COMPUTERS</span></h4>
+                            <ul class="bg-menu thin-menu" >
+                              <li><a href="">Mobile Headphones</a></li>
+                              <li><a href="">Mobile Headphones</a></li>
+                              <li><a href="">Mobile Headphones</a></li>
+                              <li><a href="">Mobile Headphones</a></li>
+                              <li><a href="">Mobile Headphones</a></li>
+                            </ul>
+                          </div>
+                          <div class="col-md-2">
+                            <h4 class="block-title"><span>Pages</span></h4>
+                            <ul class="bg-menu">
+                              <li><a href="">Mobile</a></li>
+                              <li><a href="">Mobile</a></li>
+                              <li><a href="">Mobile</a></li>
+                              <li><a href="">Mobile</a></li>
+                              <li><a href="">Mobile</a></li>
+                            </ul>
+                          </div>
+                          <div class="col-md-2">
+                            <h4 class="block-title"><span>Header styles</span></h4>
+                            <ul class="bg-menu">
+                              <li><a href="">Mobile Headphones</a></li>
+                              <li><a href="">Mobile Headphones</a></li>
+                              <li><a href="">Mobile Headphones</a></li>
+                              <li><a href="">Mobile Headphones</a></li>
+                              <li><a href="">Mobile Headphones</a></li>
+                            </ul>
+                          </div> 
+                          <div class="col-md-3">
+                            <div class="product-list">
+                              <div class="product media">
+                                <a href="" class="pull-left media-link">
+                                  <img src="./img/top-sellers-3.jpg" alt="" class="product-img">
+                                  <i class="fas fa-plus"></i>
+                                </a>
+                                <div class="product-body media-body">
+                                  <h4 class="product-name media-heading"> <a href="">Electronic Product Header</a> </h4>
+                                  <div class="rating">
+                                      <span class="star"> <i class="far fa-star"></i></span>
+                                      <span class="star"><i class="fas fa-star"></i></span>
+                                      <span class="star"><i class="fas fa-star"></i></span>
+                                      <span class="star"><i class="fas fa-star"></i></span>
+                                      <span class="star"><i class="fas fa-star"></i></span>
+                                    </div>
+                                  <div class="price">
+                                    <ins>$400.00</ins>
+                                    <del>$420.00</del>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="product media">
+                                <a href="" class="pull-left media-link">
+                                  <img src="./img/top-sellers-3.jpg" alt="" class="product-img">
+                                  <i class="fas fa-plus"></i>
+                                </a>
+                                <div class="product-body media-body">
+                                  <h4 class="product-name media-heading"> <a href="">Electronic Product Header</a> </h4>
+                                  <div class="rating">
+                                      <span class="star"> <i class="far fa-star"></i></span>
+                                      <span class="star"><i class="fas fa-star"></i></span>
+                                      <span class="star"><i class="fas fa-star"></i></span>
+                                      <span class="star"><i class="fas fa-star"></i></span>
+                                      <span class="star"><i class="fas fa-star"></i></span>
+                                    </div>
+                                  <div class="price">
+                                    <ins>$400.00</ins>
+                                    <del>$420.00</del>
+                                  </div>
+                                </div>
+                              </div> 
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                </li>
+              <li><a href="" class="nav-linked">Computers</a></li>
+              <li><a href="" class="nav-linked"> Mobiles & Accessories</a></li>
+              <li><a href="" class="nav-linked">Home Entertainment</a></li>
+              <li><a href="" class="nav-linked">Contact</a></li>
+              <li><a href="" class="nav-linked">New</a></li>
+              <li><a href="" class="nav-linked link-active">Sale</a></li>
+              <li><a href="" class="nav-linked">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+</header>
+
+
+<div class="content-area">
+    <section class="page-section breadcrumbs">
+        <div class="container">
+            <div class="page-header">
+                <h1>Category Page</h1>
+            </div>
+            <ul class="breadcrumb">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li class="active">Category Grid View Page With Left Sidebar</li>
+            </ul>
+        </div>
+    </section>
+    
+    <section class="page-section with-sidebar">
+        <div class="container">
+            <div class="row">
+                <!-- SIDEBAR -->
+                <aside class="col-md-3 sidebar" id="sidebar">
+                    <!-- widget search -->
+                    <div class="widget">
+                        <div class="widget-search">
+                            <input class="form-control" type="text" placeholder="Search">
+                            <button><i class="fa fa-search"></i></button>
+                        </div>
+                    </div>
+                    <!-- /widget search -->
+                    <!-- widget shop categories -->
+                    <div class="widget shop-categories">
+                        <h4 class="widget-title">Categories</h4>
+                        <div class="widget-content">
+                            <ul>
+                                <li>
+                                    <span class="arrow"><i class="fa fa-angle-down"></i></span>
+                                    <a href="#">Woman</a>
+                                    <ul class="children" style="display: none;">
+                                        <li>
+                                            <a href="#">Sweaters &amp; Knits
+                                                <span class="count">12</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Jackets &amp; Coats
+                                                <span class="count">12</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Denim
+                                                <span class="count">12</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Pants
+                                                <span class="count">12</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Shorts
+                                                <span class="count">12</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <span class="arrow"><i class="fa fa-angle-down"></i></span>
+                                    <a href="#">Man</a>
+                                    <ul class="children" style="display: none;">
+                                        <li>
+                                            <a href="#">Sweaters &amp; Knits
+                                                <span class="count">12</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Jackets &amp; Coats
+                                                <span class="count">12</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Denim
+                                                <span class="count">12</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Pants
+                                                <span class="count">12</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Shorts
+                                                <span class="count">12</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <span class="arrow"><i class="fa fa-angle-down"></i></span>
+                                    <a href="#">Dress</a>
+                                    <ul class="children" style="display: none;">
+                                        <li>
+                                            <a href="#">Sweaters &amp; Knits
+                                                <span class="count">12</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Jackets &amp; Coats
+                                                <span class="count">12</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Denim
+                                                <span class="count">12</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Pants
+                                                <span class="count">12</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Shorts
+                                                <span class="count">12</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <span class="arrow"><i class="fa fa-angle-down"></i></span>
+                                    <a href="#">Top Sellers</a>
+                                    <ul class="children" style="display: none;">
+                                        <li>
+                                            <a href="#">Sweaters &amp; Knits
+                                                <span class="count">12</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Jackets &amp; Coats
+                                                <span class="count">12</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Denim
+                                                <span class="count">12</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Pants
+                                                <span class="count">12</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Shorts
+                                                <span class="count">12</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <span class="arrow"><i class="fa fa-angle-up"></i></span>
+                                    <a href="#">Accessories</a>
+                                    <ul class="children active">
+                                        <li>
+                                            <a href="#">Sweaters &amp; Knits
+                                                <span class="count">12</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Jackets &amp; Coats
+                                                <span class="count">12</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Denim
+                                                <span class="count">12</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Pants
+                                                <span class="count">12</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Shorts
+                                                <span class="count">12</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Sale Off</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- /widget shop categories -->
+                    <!-- widget product color -->
+                    <div class="widget widget-colors">
+                        <h4 class="widget-title">Colors</h4>
+                        <div class="widget-content">
+                            <ul>
+                                <li><a href="#"><span style="background-color: #ffffff"></span></a></li>
+                                <li><a href="#"><span style="background-color: #161618"></span></a></li>
+                                <li><a href="#"><span style="background-color: #e74c3c"></span></a></li>
+                                <li><a href="#"><span style="background-color: #783ce7"></span></a></li>
+                                <li><a href="#"><span style="background-color: #3498db"></span></a></li>
+                                <li><a href="#"><span style="background-color: #00a847"></span></a></li>
+                                <li><a href="#"><span style="background-color: #3ce7d9"></span></a></li>
+                                <li><a href="#"><span style="background-color: #fa17bc"></span></a></li>
+                                <li><a href="#"><span style="background-color: #a87e00"></span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- /widget product color -->
+                    <!-- widget price filter -->
+                      <!-- noui -->
+                    <div class="widget widget-filter-price">
+                        <h4 class="widget-title">Price</h4>
+                        <div class="widget-content">
+                            <div id="nouiSlider"></div>
+                            <button class="btn btn-theme">Filter</button>
+                        </div>
+                    </div>
+
+                    <!-- /widget price filter -->
+                    <!-- widget tabs -->
+                    <div class="widget widget-tabs">
+                        <div class="widget-content">
+                            <ul id="tabs" class="nav nav-justified">
+                                <li><a href="#tab-s1" data-toggle="tab">Top</a></li>
+                                <li class="active"><a href="#tab-s2" data-toggle="tab">Sale Off</a></li>
+                                <li><a href="#tab-s3" data-toggle="tab">Deals</a></li>
+                            </ul>
+                            <div class="tab-content">
+                                <!-- tab 1 -->
+                                <div class="tab-pane fade" id="tab-s1">
+                                    <div class="product-list">
+                                        <div class="media">
+                                            <a class="pull-left media-link" href="#">
+                                                <img class="media-object" src="./img/top-sellers-3.jpg" alt="">
+                                                <i class="fa fa-plus"></i>
+                                            </a>
+                                            <div class="media-body">
+                                                <h4 class="media-heading"><a href="#">Electronic Product Header</a></h4>
+                                                <div class="rating">
+                                                    <span class="star"> <i class="far fa-star"></i></span>
+                                                    <span class="star"><i class="fas fa-star"></i></span>
+                                                    <span class="star"><i class="fas fa-star"></i></span>
+                                                    <span class="star"><i class="fas fa-star"></i></span>
+                                                    <span class="star"><i class="fas fa-star"></i></span>
+                                                  </div>
+                                                <div class="price"><ins>$400.00</ins> <del>$425.00</del></div>
+                                            </div>
+                                        </div>
+                                        <div class="media">
+                                            <a class="pull-left media-link" href="#">
+                                                <img class="media-object" src="./img/top-sellers-3.jpg" alt="">
+                                                <i class="fa fa-plus"></i>
+                                            </a>
+                                            <div class="media-body">
+                                                <h4 class="media-heading"><a href="#">Electronic Product Header</a></h4>
+                                                <div class="rating">
+                                                    <span class="star"> <i class="far fa-star"></i></span>
+                                                    <span class="star"><i class="fas fa-star"></i></span>
+                                                    <span class="star"><i class="fas fa-star"></i></span>
+                                                    <span class="star"><i class="fas fa-star"></i></span>
+                                                    <span class="star"><i class="fas fa-star"></i></span>
+                                                  </div>
+                                                <div class="price"><ins>$400.00</ins> <del>$425.00</del></div>
+                                            </div>
+                                        </div>
+                                        <div class="media">
+                                            <a class="pull-left media-link" href="#">
+                                                <img class="media-object" src="./img/top-sellers-3.jpg" alt="">
+                                                <i class="fa fa-plus"></i>
+                                            </a>
+                                            <div class="media-body">
+                                                <h4 class="media-heading"><a href="#">Electronic Product Header</a></h4>
+                                                <div class="rating">
+                                                    <span class="star"> <i class="far fa-star"></i></span>
+                                                    <span class="star"><i class="fas fa-star"></i></span>
+                                                    <span class="star"><i class="fas fa-star"></i></span>
+                                                    <span class="star"><i class="fas fa-star"></i></span>
+                                                    <span class="star"><i class="fas fa-star"></i></span>
+                                                  </div>
+                                                <div class="price"><ins>$400.00</ins> <del>$425.00</del></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <!-- tab 2 -->
+                                <div class="tab-pane fade in active" id="tab-s2">
+                                    <div class="product-list">
+                                        <div class="media">
+                                            <a class="pull-left media-link" href="#">
+                                                <img class="media-object" src="./img/top-sellers-3.jpg" alt="">
+                                                <i class="fa fa-plus"></i>
+                                            </a>
+                                            <div class="media-body">
+                                                <h4 class="media-heading"><a href="#">Electronic Product Header</a></h4>
+                                                <div class="rating">
+                                                  <span class="star"> <i class="far fa-star"></i></span>
+                                                  <span class="star"><i class="fas fa-star"></i></span>
+                                                  <span class="star"><i class="fas fa-star"></i></span>
+                                                  <span class="star"><i class="fas fa-star"></i></span>
+                                                  <span class="star"><i class="fas fa-star"></i></span>
+                                                </div>
+                                                <div class="price"><ins>$400.00</ins> <del>$425.00</del></div>
+                                            </div>
+                                        </div>
+                                        <div class="media">
+                                            <a class="pull-left media-link" href="#">
+                                                <img class="media-object" src="./img/top-sellers-3.jpg" alt="">
+                                                <i class="fa fa-plus"></i>
+                                            </a>
+                                            <div class="media-body">
+                                                <h4 class="media-heading"><a href="#">Electronic Product Header</a></h4>
+                                                <div class="rating">
+                                                  <span class="star"> <i class="far fa-star"></i></span>
+                                                  <span class="star"><i class="fas fa-star"></i></span>
+                                                  <span class="star"><i class="fas fa-star"></i></span>
+                                                  <span class="star"><i class="fas fa-star"></i></span>
+                                                  <span class="star"><i class="fas fa-star"></i></span>
+                                                </div>
+                                                <div class="price"><ins>$400.00</ins> <del>$425.00</del></div>
+                                            </div>
+                                        </div>
+                                        <div class="media">
+                                            <a class="pull-left media-link" href="#">
+                                                <img class="media-object" src="./img/top-sellers-3.jpg" alt="">
+                                                <i class="fa fa-plus"></i>
+                                            </a>
+                                            <div class="media-body">
+                                                <h4 class="media-heading"><a href="#">Electronic Product Header</a></h4>
+                                                 <div class="rating">
+                                                  <span class="star"> <i class="far fa-star"></i></span>
+                                                  <span class="star"><i class="fas fa-star"></i></span>
+                                                  <span class="star"><i class="fas fa-star"></i></span>
+                                                  <span class="star"><i class="fas fa-star"></i></span>
+                                                  <span class="star"><i class="fas fa-star"></i></span>
+                                                </div>
+                                                <div class="price"><ins>$400.00</ins> <del>$425.00</del></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <!-- tab 3 -->
+                                <div class="tab-pane fade" id="tab-s3">
+                                    <div class="product-list">
+                                        <div class="media">
+                                            <a class="pull-left media-link" href="#">
+                                                <img class="media-object" src="./img/top-sellers-3.jpg" alt="">
+                                                <i class="fa fa-plus"></i>
+                                            </a>
+                                            <div class="media-body">
+                                                <h4 class="media-heading"><a href="#">Electronic Product Header</a></h4>
+                                                 <div class="rating">
+                                                  <span class="star"> <i class="far fa-star"></i></span>
+                                                  <span class="star"><i class="fas fa-star"></i></span>
+                                                  <span class="star"><i class="fas fa-star"></i></span>
+                                                  <span class="star"><i class="fas fa-star"></i></span>
+                                                  <span class="star"><i class="fas fa-star"></i></span>
+                                                </div>
+                                                <div class="price"><ins>$400.00</ins> <del>$425.00</del></div>
+                                            </div>
+                                        </div>
+                                        <div class="media">
+                                            <a class="pull-left media-link" href="#">
+                                                <img class="media-object" src="./img/top-sellers-3.jpg" alt="">
+                                                <i class="fa fa-plus"></i>
+                                            </a>
+                                            <div class="media-body">
+                                                <h4 class="media-heading"><a href="#">Electronic Product Header</a></h4>
+                                                 <div class="rating">
+                                                  <span class="star"> <i class="far fa-star"></i></span>
+                                                  <span class="star"><i class="fas fa-star"></i></span>
+                                                  <span class="star"><i class="fas fa-star"></i></span>
+                                                  <span class="star"><i class="fas fa-star"></i></span>
+                                                  <span class="star"><i class="fas fa-star"></i></span>
+                                                </div>
+                                                <div class="price"><ins>$400.00</ins> <del>$425.00</del></div>
+                                            </div>
+                                        </div>
+                                        <div class="media">
+                                            <a class="pull-left media-link" href="#">
+                                                <img class="media-object" src="./img/top-sellers-3.jpg" alt="">
+                                                <i class="fa fa-plus"></i>
+                                            </a>
+                                            <div class="media-body">
+                                                <h4 class="media-heading"><a href="#">Electronic Product Header</a></h4>
+                                                 <div class="rating">
+                                                  <span class="star"> <i class="far fa-star"></i></span>
+                                                  <span class="star"><i class="fas fa-star"></i></span>
+                                                  <span class="star"><i class="fas fa-star"></i></span>
+                                                  <span class="star"><i class="fas fa-star"></i></span>
+                                                  <span class="star"><i class="fas fa-star"></i></span>
+                                                </div>
+                                                <div class="price"><ins>$400.00</ins> <del>$425.00</del></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="btn btn-theme btn-theme-dark btn-theme-sm btn-block" href="#">More Products</a>
+                        </div>
+                    </div>
+                    <!-- /widget tabs -->
+                    <!-- widget tag cloud -->
+                    <div class="widget widget-tag-cloud">
+                        <a class="btn btn-theme btn-title-more" href="#">See All</a>
+                        <h4 class="widget-title"><span>Tags</span></h4>
+                        <ul>
+                            <li><a href="#">Gadgets</a></li>
+                            <li><a href="#">Electronic</a></li>
+                            <li><a href="#">Top Sellers</a></li>
+                            <li><a href="#">E commerce</a></li>
+                            <li><a href="#">Hot Deals</a></li>
+                            <li><a href="#">Supplier</a></li>
+                            <li><a href="#">Shop</a></li>
+                            <li><a href="#">Theme</a></li>
+                            <li><a href="#">Website</a></li>
+                            <li><a href="#">Isamercan</a></li>
+                            <li><a href="#">Themeforest</a></li>
+                        </ul>
+                    </div>
+                    <!-- /widget tag cloud -->
+                    <!-- widget products carousel -->
+                    <div class="widget">
+                        <a class="btn btn-theme btn-title-more" href="#">See All</a>
+                        <h4 class="widget-title"><span>Top products</span></h4>
+                        <div class="single-item">
+                          <div>
+                              <div class="product big-product  thumbnail no-border no-padding"  data-toggle="modal" data-target="#myModal" data-id="./img/product-1-big.jpg">
+                                <div class="media">
+                                <a href="#" class="media-link">
+                                  <img src="./img/product-1-big.jpg" alt="">
+                                  <span class="icon-view"><strong><i class="fa fa-eye"></i></strong></span>
+                                  </a>
+                                </div>
+                                <div class="caption text-center">
+                                  <h4 class="caption-title"><a href="">Electronic Product Header</a></h4>
+                                  <div class="rating">
+                                    <span class="star"> <i class="far fa-star"></i></span>
+                                    <span class="star"><i class="fas fa-star"></i></span>
+                                    <span class="star"><i class="fas fa-star"></i></span>
+                                    <span class="star"><i class="fas fa-star"></i></span>
+                                    <span class="star"><i class="fas fa-star"></i></span>
+                                  </div>
+                                  <div class="price">
+                                    <ins>$400.00</ins>
+                                    <del>$425.00</del>
+                                  </div>
+                                  <div class="buttons">
+                                    <a href="" class="btn btn-theme btn-theme-transparent btn-wish-list"><i class="fa fa-heart"></i></a>
+                                    <a href="" class="btn btn-theme btn-theme-transparent"><i class="fa fa-shopping-cart"></i>Add to Cart </a>
+                                    <a href="" class="btn btn-theme btn-theme-transparent btn-compare"><i class="fa fa-heart"></i></a>
+                                  </div>
+                                </div>
+                            </div>
+                          </div>
+                          <div>
+                              <div class="product big-product  thumbnail no-border no-padding"  data-toggle="modal" data-target="#myModal" data-id="./img/product-1-big.jpg">
+                                <div class="media">
+                                <a href="#" class="media-link">
+                                  <img src="./img/product-1-big.jpg" alt="">
+                                  <span class="icon-view"><strong><i class="fa fa-eye"></i></strong></span>
+                                  </a>
+                                </div>
+                                <div class="caption text-center">
+                                  <h4 class="caption-title"><a href="">Electronic Product Header</a></h4>
+                                  <div class="rating">
+                                    <span class="star"> <i class="far fa-star"></i></span>
+                                    <span class="star"><i class="fas fa-star"></i></span>
+                                    <span class="star"><i class="fas fa-star"></i></span>
+                                    <span class="star"><i class="fas fa-star"></i></span>
+                                    <span class="star"><i class="fas fa-star"></i></span>
+                                  </div>
+                                  <div class="price">
+                                    <ins>$400.00</ins>
+                                    <del>$425.00</del>
+                                  </div>
+                                  <div class="buttons">
+                                    <a href="" class="btn btn-theme btn-theme-transparent btn-wish-list"><i class="fa fa-heart"></i></a>
+                                    <a href="" class="btn btn-theme btn-theme-transparent"><i class="fa fa-shopping-cart"></i>Add to Cart </a>
+                                    <a href="" class="btn btn-theme btn-theme-transparent btn-compare"><i class="fa fa-heart"></i></a>
+                                  </div>
+                                </div>
+                            </div>
+                          </div>
+                          <div>
+                              <div class="product big-product  thumbnail no-border no-padding"  data-toggle="modal" data-target="#myModal" data-id="./img/product-1-big.jpg">
+                                <div class="media">
+                                <a href="#" class="media-link">
+                                  <img src="./img/product-1-big.jpg" alt="">
+                                  <span class="icon-view"><strong><i class="fa fa-eye"></i></strong></span>
+                                  </a>
+                                </div>
+                                <div class="caption text-center">
+                                  <h4 class="caption-title"><a href="">Electronic Product Header</a></h4>
+                                  <div class="rating">
+                                    <span class="star"> <i class="far fa-star"></i></span>
+                                    <span class="star"><i class="fas fa-star"></i></span>
+                                    <span class="star"><i class="fas fa-star"></i></span>
+                                    <span class="star"><i class="fas fa-star"></i></span>
+                                    <span class="star"><i class="fas fa-star"></i></span>
+                                  </div>
+                                  <div class="price">
+                                    <ins>$400.00</ins>
+                                    <del>$425.00</del>
+                                  </div>
+                                  <div class="buttons">
+                                    <a href="" class="btn btn-theme btn-theme-transparent btn-wish-list"><i class="fa fa-heart"></i></a>
+                                    <a href="" class="btn btn-theme btn-theme-transparent"><i class="fa fa-shopping-cart"></i>Add to Cart </a>
+                                    <a href="" class="btn btn-theme btn-theme-transparent btn-compare"><i class="fa fa-heart"></i></a>
+                                  </div>
+                                </div>
+                            </div>
+                          </div>
+                        </div>      
+                    </div>
+                    <div class="widget">
+                        <a class="btn btn-theme btn-title-more" href="#">See All</a>
+                        <h4 class="widget-title"><span>Top products</span></h4>
+                        <div class="single-item">
+                          <div>
+                            <div class="product big-product  thumbnail no-border no-padding"  data-toggle="modal" data-target="#myModal" data-id="./img/product-1-big.jpg">
+                              <div class="media">
+                              <a href="#" class="media-link">
+                                <img src="./img/product-1-big.jpg" alt="">
+                                <span class="icon-view"><strong><i class="fa fa-eye"></i></strong></span>
+                                </a>
+                              </div>
+                              <div class="caption text-center">
+                                <h4 class="caption-title"><a href="">Electronic Product Header</a></h4>
+                                <div class="rating">
+                                  <span class="star"> <i class="far fa-star"></i></span>
+                                  <span class="star"><i class="fas fa-star"></i></span>
+                                  <span class="star"><i class="fas fa-star"></i></span>
+                                  <span class="star"><i class="fas fa-star"></i></span>
+                                  <span class="star"><i class="fas fa-star"></i></span>
+                                </div>
+                                <span class="reviews">16 reviews</span>
+                                <div class="price">
+                                  <ins>$400.00</ins>
+                                  <del>$425.00</del>
+                                </div>
+                                <div class="caption-text">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan.</div>
+                                <div class="buttons">
+                                  <a href="" class="btn btn-theme btn-theme-transparent btn-wish-list"><i class="fa fa-heart"></i></a>
+                                  <a href="" class="btn btn-theme btn-theme-transparent"><i class="fa fa-shopping-cart"></i>Add to Cart </a>
+                                  <a href="" class="btn btn-theme btn-theme-transparent btn-compare"><i class="fa fa-heart"></i></a>
+                                </div>
+                            </div>
+                            </div>
+                          </div>
+                          <div>
+                          <div class="product big-product  thumbnail no-border no-padding"  data-toggle="modal" data-target="#myModal" data-id="./img/product-1-big.jpg">
+                            <div class="media">
+                            <a href="#" class="media-link">
+                              <img src="./img/product-1-big.jpg" alt="">
+                              <span class="icon-view"><strong><i class="fa fa-eye"></i></strong></span>
+                              </a>
+                            </div>
+                            <div class="caption text-center">
+                              <h4 class="caption-title"><a href="">Electronic Product Header</a></h4>
+                              <div class="rating">
+                                <span class="star"> <i class="far fa-star"></i></span>
+                                <span class="star"><i class="fas fa-star"></i></span>
+                                <span class="star"><i class="fas fa-star"></i></span>
+                                <span class="star"><i class="fas fa-star"></i></span>
+                                <span class="star"><i class="fas fa-star"></i></span>
+                              </div>
+                              <span class="reviews">16 reviews</span>
+                              <div class="price">
+                                <ins>$400.00</ins>
+                                <del>$425.00</del>
+                              </div>
+                              <div class="caption-text">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan.</div>
+                              <div class="buttons">
+                                <a href="" class="btn btn-theme btn-theme-transparent btn-wish-list"><i class="fa fa-heart"></i></a>
+                                <a href="" class="btn btn-theme btn-theme-transparent"><i class="fa fa-shopping-cart"></i>Add to Cart </a>
+                                <a href="" class="btn btn-theme btn-theme-transparent btn-compare"><i class="fa fa-heart"></i></a>
+                              </div>
+                          </div>
+                          </div>
+                        </div>
+                        <div>
+                          <div class="product big-product  thumbnail no-border no-padding"  data-toggle="modal" data-target="#myModal" data-id="./img/product-1-big.jpg">
+                            <div class="media">
+                            <a href="#" class="media-link">
+                              <img src="./img/product-1-big.jpg" alt="">
+                              <span class="icon-view"><strong><i class="fa fa-eye"></i></strong></span>
+                              </a>
+                            </div>
+                            <div class="caption text-center">
+                              <h4 class="caption-title"><a href="">Electronic Product Header</a></h4>
+                              <div class="rating">
+                                <span class="star"> <i class="far fa-star"></i></span>
+                                <span class="star"><i class="fas fa-star"></i></span>
+                                <span class="star"><i class="fas fa-star"></i></span>
+                                <span class="star"><i class="fas fa-star"></i></span>
+                                <span class="star"><i class="fas fa-star"></i></span>
+                              </div>
+                              <span class="reviews">16 reviews</span>
+                              <div class="price">
+                                <ins>$400.00</ins>
+                                <del>$425.00</del>
+                              </div>
+                              <div class="caption-text">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan.</div>
+                              <div class="buttons">
+                                <a href="" class="btn btn-theme btn-theme-transparent btn-wish-list"><i class="fa fa-heart"></i></a>
+                                <a href="" class="btn btn-theme btn-theme-transparent"><i class="fa fa-shopping-cart"></i>Add to Cart </a>
+                                <a href="" class="btn btn-theme btn-theme-transparent btn-compare"><i class="fa fa-heart"></i></a>
+                              </div>
+                          </div>
+                          </div>
+                        </div>
+                        </div>
+                    <div>
+                </aside>
+                <!-- /SIDEBAR -->
+                <div class="col-md-9" id="content">
+                  <div class="main-slider sub">
+                    <section class="slider">
+                        <div id="demo" class="carousel slide" data-ride="carousel">
+                            <ul class="carousel-indicators">
+                              <li data-target="#demo" data-slide-to="0" class="active"></li>
+                              <li data-target="#demo" data-slide-to="1"></li>
+                            </ul>
+                          
+                            <!-- The slideshow -->
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img src="img/slide-1.jpg">
+                                <div class="carousel-caption">
+                                  <div class="caption-content">
+                                      <h2 class="caption-title"><span>Electronic Gadgets</span></h2>
+                                      <h3 class="caption-subtitle"><span>Collection Ready</span></h3>
+                                      <p class="caption-text">
+                                          <a class="btn btn-theme" href="#">Shop Now</a>
+                                      </p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <img src="img/slide-2.jpg" >
+                                <div class="carousel-caption">
+                                    <div class="caption-content">
+                                        <h2 class="caption-title"><span>Electronic Gadgets</span></h2>
+                                        <h3 class="caption-subtitle"><span>Collection Ready</span></h3>
+                                        <p class="caption-text">
+                                            <a class="btn btn-theme" href="#">Shop Now</a>
+                                        </p>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                          
+                            <!-- Left and right controls -->
+                            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                              <span class="carousel-control-prev-icon"></span>
+                            </a>
+                            <a class="carousel-control-next" href="#demo" data-slide="next">
+                              <span class="carousel-control-next-icon"></span>
+                            </a>
+                          </div>
+                    </section>
+                  </div>
+                  <div class="shop-sorting">
+                      <div class="row">
+                          <div class="col-sm-8">
+                              <form class="form-inline" action="">
+                                  <div class="form-group selectpicker-wrapper">
+                                      <select class="selectpicker input-price" data-live-search="true" data-width="100%" data-toggle="tooltip" title="Select" style="display: none;">
+                                          <option>Product Name</option>
+                                          <option>Product Name</option>
+                                          <option>Product Name</option>
+                                      </select><div class="btn-group bootstrap-select input-price" style="width: 100%;"><button type="button" class="btn dropdown-toggle selectpicker btn-default" data-toggle="dropdown" title="Product Name" aria-expanded="false"><span class="filter-option pull-left">Product Name</span>&nbsp;<span class="caret"></span></button><div class="dropdown-menu open" style="max-height: 309.859px; overflow: hidden; min-height: 48px;"><div class="bs-searchbox"><input type="text" class="input-block-level form-control" autocomplete="off"></div><ul class="dropdown-menu inner selectpicker" role="menu" style="max-height: 245.859px; overflow-y: auto; min-height: 0px;"><li data-original-index="0" class="selected active"><a tabindex="0" class="" data-normalized-text="<span class=&quot;text&quot;>Product Name</span>"><span class="text">Product Name</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="1"><a tabindex="0" class="" data-normalized-text="<span class=&quot;text&quot;>Product Name</span>"><span class="text">Product Name</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="2"><a tabindex="0" class="" data-normalized-text="<span class=&quot;text&quot;>Product Name</span>"><span class="text">Product Name</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li></ul></div></div>
+                                  </div>
+                                  <div class="form-group selectpicker-wrapper">
+                                      <select class="selectpicker input-price" data-live-search="true" data-width="100%" data-toggle="tooltip" title="Select" style="display: none;">
+                                          <option>Select Manifacturers</option>
+                                          <option>Select Manifacturers</option>
+                                          <option>Select Manifacturers</option>
+                                      </select><div class="btn-group bootstrap-select input-price" style="width: 100%;"><button type="button" class="btn dropdown-toggle selectpicker btn-default" data-toggle="dropdown" title="Select Manifacturers" aria-expanded="false"><span class="filter-option pull-left">Select Manifacturers</span>&nbsp;<span class="caret"></span></button><div class="dropdown-menu open" style="max-height: 309.859px; overflow: hidden; min-height: 48px;"><div class="bs-searchbox"><input type="text" class="input-block-level form-control" autocomplete="off"></div><ul class="dropdown-menu inner selectpicker" role="menu" style="max-height: 245.859px; overflow-y: auto; min-height: 0px;"><li data-original-index="0" class="selected active"><a tabindex="0" class="" data-normalized-text="<span class=&quot;text&quot;>Select Manifacturers</span>"><span class="text">Select Manifacturers</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="1"><a tabindex="0" class="" data-normalized-text="<span class=&quot;text&quot;>Select Manifacturers</span>"><span class="text">Select Manifacturers</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="2"><a tabindex="0" class="" data-normalized-text="<span class=&quot;text&quot;>Select Manifacturers</span>"><span class="text">Select Manifacturers</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li></ul></div></div>
+                                  </div>
+                              </form>
+                          </div>
+                          <div class="col-sm-4 text-right-sm">
+                              <a class="btn btn-theme btn-theme-transparent btn-theme-sm" href="#"><i class="fas fa-bars"></i></a>
+                              <a class="btn btn-theme btn-theme-transparent btn-theme-sm" href="#"><i class="fas fa-th-large"></i></a>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="row products grid">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="product big-product  thumbnail no-border no-padding" data-toggle="modal" data-target="#myModal" data-id="./img/product-1-big.jpg">
+                          <div class="media">
+                          <a href="#" class="media-link">
+                            <img src="./img/product-1-big.jpg" alt="">
+                            <span class="icon-view"><strong><i class="fa fa-eye"></i></strong></span>
+                            </a>
+                          </div>
+                          <div class="caption text-center">
+                            <h4 class="caption-title"><a href="">Electronic Product Header</a></h4>
+                            <div class="rating">
+                              <span class="star"> <i class="far fa-star"></i></span>
+                              <span class="star"><i class="fas fa-star"></i></span>
+                              <span class="star"><i class="fas fa-star"></i></span>
+                              <span class="star"><i class="fas fa-star"></i></span>
+                              <span class="star"><i class="fas fa-star"></i></span>
+                            </div>
+                            <div class="price">
+                              <ins>$400.00</ins>
+                              <del>$425.00</del>
+                            </div>
+                            <div class="buttons">
+                              <a href="" class="btn btn-theme btn-theme-transparent btn-wish-list"><i class="fa fa-heart"></i></a>
+                              <a href="" class="btn btn-theme btn-theme-transparent"><i class="fa fa-shopping-cart"></i>Add to Cart </a>
+                              <a href="" class="btn btn-theme btn-theme-transparent btn-compare"><i class="fa fa-heart"></i></a>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="product big-product  thumbnail no-border no-padding" data-toggle="modal" data-target="#myModal" data-id="./img/product-1-big.jpg">
+                          <div class="media">
+                          <a href="#" class="media-link">
+                            <img src="./img/product-1-big.jpg" alt="">
+                            <span class="icon-view"><strong><i class="fa fa-eye"></i></strong></span>
+                            </a>
+                          </div>
+                          <div class="caption text-center">
+                            <h4 class="caption-title"><a href="">Electronic Product Header</a></h4>
+                            <div class="rating">
+                              <span class="star"> <i class="far fa-star"></i></span>
+                              <span class="star"><i class="fas fa-star"></i></span>
+                              <span class="star"><i class="fas fa-star"></i></span>
+                              <span class="star"><i class="fas fa-star"></i></span>
+                              <span class="star"><i class="fas fa-star"></i></span>
+                            </div>
+                            <div class="price">
+                              <ins>$400.00</ins>
+                              <del>$425.00</del>
+                            </div>
+                            <div class="buttons">
+                              <a href="" class="btn btn-theme btn-theme-transparent btn-wish-list"><i class="fa fa-heart"></i></a>
+                              <a href="" class="btn btn-theme btn-theme-transparent"><i class="fa fa-shopping-cart"></i>Add to Cart </a>
+                              <a href="" class="btn btn-theme btn-theme-transparent btn-compare"><i class="fa fa-heart"></i></a>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="product big-product  thumbnail no-border no-padding" data-toggle="modal" data-target="#myModal" data-id="./img/product-1-big.jpg">
+                          <div class="media">
+                          <a href="#" class="media-link">
+                            <img src="./img/product-1-big.jpg" alt="">
+                            <span class="icon-view"><strong><i class="fa fa-eye"></i></strong></span>
+                            </a>
+                          </div>
+                          <div class="caption text-center">
+                            <h4 class="caption-title"><a href="">Electronic Product Header</a></h4>
+                            <div class="rating">
+                              <span class="star"> <i class="far fa-star"></i></span>
+                              <span class="star"><i class="fas fa-star"></i></span>
+                              <span class="star"><i class="fas fa-star"></i></span>
+                              <span class="star"><i class="fas fa-star"></i></span>
+                              <span class="star"><i class="fas fa-star"></i></span>
+                            </div>
+                            <div class="price">
+                              <ins>$400.00</ins>
+                              <del>$425.00</del>
+                            </div>
+                            <div class="buttons">
+                              <a href="" class="btn btn-theme btn-theme-transparent btn-wish-list"><i class="fa fa-heart"></i></a>
+                              <a href="" class="btn btn-theme btn-theme-transparent"><i class="fa fa-shopping-cart"></i>Add to Cart </a>
+                              <a href="" class="btn btn-theme btn-theme-transparent btn-compare"><i class="fa fa-heart"></i></a>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="product big-product  thumbnail no-border no-padding" data-toggle="modal" data-target="#myModal" data-id="./img/product-1-big.jpg">
+                          <div class="media">
+                          <a href="#" class="media-link">
+                            <img src="./img/product-1-big.jpg" alt="">
+                            <span class="icon-view"><strong><i class="fa fa-eye"></i></strong></span>
+                            </a>
+                          </div>
+                          <div class="caption text-center">
+                            <h4 class="caption-title"><a href="">Electronic Product Header</a></h4>
+                            <div class="rating">
+                              <span class="star"> <i class="far fa-star"></i></span>
+                              <span class="star"><i class="fas fa-star"></i></span>
+                              <span class="star"><i class="fas fa-star"></i></span>
+                              <span class="star"><i class="fas fa-star"></i></span>
+                              <span class="star"><i class="fas fa-star"></i></span>
+                            </div>
+                            <div class="price">
+                              <ins>$400.00</ins>
+                              <del>$425.00</del>
+                            </div>
+                            <div class="buttons">
+                              <a href="" class="btn btn-theme btn-theme-transparent btn-wish-list"><i class="fa fa-heart"></i></a>
+                              <a href="" class="btn btn-theme btn-theme-transparent"><i class="fa fa-shopping-cart"></i>Add to Cart </a>
+                              <a href="" class="btn btn-theme btn-theme-transparent btn-compare"><i class="fa fa-heart"></i></a>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="product big-product  thumbnail no-border no-padding" data-toggle="modal" data-target="#myModal" data-id="./img/product-1-big.jpg">
+                          <div class="media">
+                          <a href="#" class="media-link">
+                            <img src="./img/product-1-big.jpg" alt="">
+                            <span class="icon-view"><strong><i class="fa fa-eye"></i></strong></span>
+                            </a>
+                          </div>
+                          <div class="caption text-center">
+                            <h4 class="caption-title"><a href="">Electronic Product Header</a></h4>
+                            <div class="rating">
+                              <span class="star"> <i class="far fa-star"></i></span>
+                              <span class="star"><i class="fas fa-star"></i></span>
+                              <span class="star"><i class="fas fa-star"></i></span>
+                              <span class="star"><i class="fas fa-star"></i></span>
+                              <span class="star"><i class="fas fa-star"></i></span>
+                            </div>
+                            <div class="price">
+                              <ins>$400.00</ins>
+                              <del>$425.00</del>
+                            </div>
+                            <div class="buttons">
+                              <a href="" class="btn btn-theme btn-theme-transparent btn-wish-list"><i class="fa fa-heart"></i></a>
+                              <a href="" class="btn btn-theme btn-theme-transparent"><i class="fa fa-shopping-cart"></i>Add to Cart </a>
+                              <a href="" class="btn btn-theme btn-theme-transparent btn-compare"><i class="fa fa-heart"></i></a>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="product big-product  thumbnail no-border no-padding" data-toggle="modal" data-target="#myModal" data-id="./img/product-1-big.jpg">
+                          <div class="media">
+                          <a href="#" class="media-link">
+                            <img src="./img/product-1-big.jpg" alt="">
+                            <span class="icon-view"><strong><i class="fa fa-eye"></i></strong></span>
+                            </a>
+                          </div>
+                          <div class="caption text-center">
+                            <h4 class="caption-title"><a href="">Electronic Product Header</a></h4>
+                            <div class="rating">
+                              <span class="star"> <i class="far fa-star"></i></span>
+                              <span class="star"><i class="fas fa-star"></i></span>
+                              <span class="star"><i class="fas fa-star"></i></span>
+                              <span class="star"><i class="fas fa-star"></i></span>
+                              <span class="star"><i class="fas fa-star"></i></span>
+                            </div>
+                            <div class="price">
+                              <ins>$400.00</ins>
+                              <del>$425.00</del>
+                            </div>
+                            <div class="buttons">
+                              <a href="" class="btn btn-theme btn-theme-transparent btn-wish-list"><i class="fa fa-heart"></i></a>
+                              <a href="" class="btn btn-theme btn-theme-transparent"><i class="fa fa-shopping-cart"></i>Add to Cart </a>
+                              <a href="" class="btn btn-theme btn-theme-transparent btn-compare"><i class="fa fa-heart"></i></a>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="product big-product  thumbnail no-border no-padding" data-toggle="modal" data-target="#myModal" data-id="./img/product-1-big.jpg">
+                          <div class="media">
+                          <a href="#" class="media-link">
+                            <img src="./img/product-1-big.jpg" alt="">
+                            <span class="icon-view"><strong><i class="fa fa-eye"></i></strong></span>
+                            </a>
+                          </div>
+                          <div class="caption text-center">
+                            <h4 class="caption-title"><a href="">Electronic Product Header</a></h4>
+                            <div class="rating">
+                              <span class="star"> <i class="far fa-star"></i></span>
+                              <span class="star"><i class="fas fa-star"></i></span>
+                              <span class="star"><i class="fas fa-star"></i></span>
+                              <span class="star"><i class="fas fa-star"></i></span>
+                              <span class="star"><i class="fas fa-star"></i></span>
+                            </div>
+                            <div class="price">
+                              <ins>$400.00</ins>
+                              <del>$425.00</del>
+                            </div>
+                            <div class="buttons">
+                              <a href="" class="btn btn-theme btn-theme-transparent btn-wish-list"><i class="fa fa-heart"></i></a>
+                              <a href="" class="btn btn-theme btn-theme-transparent"><i class="fa fa-shopping-cart"></i>Add to Cart </a>
+                              <a href="" class="btn btn-theme btn-theme-transparent btn-compare"><i class="fa fa-heart"></i></a>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="product big-product  thumbnail no-border no-padding" data-toggle="modal" data-target="#myModal" data-id="./img/product-1-big.jpg">
+                          <div class="media">
+                          <a href="#" class="media-link">
+                            <img src="./img/product-1-big.jpg" alt="">
+                            <span class="icon-view"><strong><i class="fa fa-eye"></i></strong></span>
+                            </a>
+                          </div>
+                          <div class="caption text-center">
+                            <h4 class="caption-title"><a href="">Electronic Product Header</a></h4>
+                            <div class="rating">
+                              <span class="star"> <i class="far fa-star"></i></span>
+                              <span class="star"><i class="fas fa-star"></i></span>
+                              <span class="star"><i class="fas fa-star"></i></span>
+                              <span class="star"><i class="fas fa-star"></i></span>
+                              <span class="star"><i class="fas fa-star"></i></span>
+                            </div>
+                            <div class="price">
+                              <ins>$400.00</ins>
+                              <del>$425.00</del>
+                            </div>
+                            <div class="buttons">
+                              <a href="" class="btn btn-theme btn-theme-transparent btn-wish-list"><i class="fa fa-heart"></i></a>
+                              <a href="" class="btn btn-theme btn-theme-transparent"><i class="fa fa-shopping-cart"></i>Add to Cart </a>
+                              <a href="" class="btn btn-theme btn-theme-transparent btn-compare"><i class="fa fa-heart"></i></a>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="product big-product  thumbnail no-border no-padding" data-toggle="modal" data-target="#myModal" data-id="./img/product-1-big.jpg">
+                          <div class="media">
+                          <a href="#" class="media-link">
+                            <img src="./img/product-1-big.jpg" alt="">
+                            <span class="icon-view"><strong><i class="fa fa-eye"></i></strong></span>
+                            </a>
+                          </div>
+                          <div class="caption text-center">
+                            <h4 class="caption-title"><a href="">Electronic Product Header</a></h4>
+                            <div class="rating">
+                              <span class="star"> <i class="far fa-star"></i></span>
+                              <span class="star"><i class="fas fa-star"></i></span>
+                              <span class="star"><i class="fas fa-star"></i></span>
+                              <span class="star"><i class="fas fa-star"></i></span>
+                              <span class="star"><i class="fas fa-star"></i></span>
+                            </div>
+                            <div class="price">
+                              <ins>$400.00</ins>
+                              <del>$425.00</del>
+                            </div>
+                            <div class="buttons">
+                              <a href="" class="btn btn-theme btn-theme-transparent btn-wish-list"><i class="fa fa-heart"></i></a>
+                              <a href="" class="btn btn-theme btn-theme-transparent"><i class="fa fa-shopping-cart"></i>Add to Cart </a>
+                              <a href="" class="btn btn-theme btn-theme-transparent btn-compare"><i class="fa fa-heart"></i></a>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="product big-product  thumbnail no-border no-padding" data-toggle="modal" data-target="#myModal" data-id="./img/product-1-big.jpg">
+                          <div class="media">
+                          <a href="#" class="media-link">
+                            <img src="./img/product-1-big.jpg" alt="">
+                            <span class="icon-view"><strong><i class="fa fa-eye"></i></strong></span>
+                            </a>
+                          </div>
+                          <div class="caption text-center">
+                            <h4 class="caption-title"><a href="">Electronic Product Header</a></h4>
+                            <div class="rating">
+                              <span class="star"> <i class="far fa-star"></i></span>
+                              <span class="star"><i class="fas fa-star"></i></span>
+                              <span class="star"><i class="fas fa-star"></i></span>
+                              <span class="star"><i class="fas fa-star"></i></span>
+                              <span class="star"><i class="fas fa-star"></i></span>
+                            </div>
+                            <div class="price">
+                              <ins>$400.00</ins>
+                              <del>$425.00</del>
+                            </div>
+                            <div class="buttons">
+                              <a href="" class="btn btn-theme btn-theme-transparent btn-wish-list"><i class="fa fa-heart"></i></a>
+                              <a href="" class="btn btn-theme btn-theme-transparent"><i class="fa fa-shopping-cart"></i>Add to Cart </a>
+                              <a href="" class="btn btn-theme btn-theme-transparent btn-compare"><i class="fa fa-heart"></i></a>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="product big-product  thumbnail no-border no-padding" data-toggle="modal" data-target="#myModal" data-id="./img/product-1-big.jpg">
+                          <div class="media">
+                          <a href="#" class="media-link">
+                            <img src="./img/product-1-big.jpg" alt="">
+                            <span class="icon-view"><strong><i class="fa fa-eye"></i></strong></span>
+                            </a>
+                          </div>
+                          <div class="caption text-center">
+                            <h4 class="caption-title"><a href="">Electronic Product Header</a></h4>
+                            <div class="rating">
+                              <span class="star"> <i class="far fa-star"></i></span>
+                              <span class="star"><i class="fas fa-star"></i></span>
+                              <span class="star"><i class="fas fa-star"></i></span>
+                              <span class="star"><i class="fas fa-star"></i></span>
+                              <span class="star"><i class="fas fa-star"></i></span>
+                            </div>
+                            <div class="price">
+                              <ins>$400.00</ins>
+                              <del>$425.00</del>
+                            </div>
+                            <div class="buttons">
+                              <a href="" class="btn btn-theme btn-theme-transparent btn-wish-list"><i class="fa fa-heart"></i></a>
+                              <a href="" class="btn btn-theme btn-theme-transparent"><i class="fa fa-shopping-cart"></i>Add to Cart </a>
+                              <a href="" class="btn btn-theme btn-theme-transparent btn-compare"><i class="fa fa-heart"></i></a>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="product big-product  thumbnail no-border no-padding" data-toggle="modal" data-target="#myModal" data-id="./img/product-1-big.jpg">
+                          <div class="media">
+                          <a href="#" class="media-link">
+                            <img src="./img/product-1-big.jpg" alt="">
+                            <span class="icon-view"><strong><i class="fa fa-eye"></i></strong></span>
+                            </a>
+                          </div>
+                          <div class="caption text-center">
+                            <h4 class="caption-title"><a href="">Electronic Product Header</a></h4>
+                            <div class="rating">
+                              <span class="star"> <i class="far fa-star"></i></span>
+                              <span class="star"><i class="fas fa-star"></i></span>
+                              <span class="star"><i class="fas fa-star"></i></span>
+                              <span class="star"><i class="fas fa-star"></i></span>
+                              <span class="star"><i class="fas fa-star"></i></span>
+                            </div>
+                            <div class="price">
+                              <ins>$400.00</ins>
+                              <del>$425.00</del>
+                            </div>
+                            <div class="buttons">
+                              <a href="" class="btn btn-theme btn-theme-transparent btn-wish-list"><i class="fa fa-heart"></i></a>
+                              <a href="" class="btn btn-theme btn-theme-transparent"><i class="fa fa-shopping-cart"></i>Add to Cart </a>
+                              <a href="" class="btn btn-theme btn-theme-transparent btn-compare"><i class="fa fa-heart"></i></a>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="product big-product  thumbnail no-border no-padding" data-toggle="modal" data-target="#myModal" data-id="./img/product-1-big.jpg">
+                          <div class="media">
+                          <a href="#" class="media-link">
+                            <img src="./img/product-1-big.jpg" alt="">
+                            <span class="icon-view"><strong><i class="fa fa-eye"></i></strong></span>
+                            </a>
+                          </div>
+                          <div class="caption text-center">
+                            <h4 class="caption-title"><a href="">Electronic Product Header</a></h4>
+                            <div class="rating">
+                              <span class="star"> <i class="far fa-star"></i></span>
+                              <span class="star"><i class="fas fa-star"></i></span>
+                              <span class="star"><i class="fas fa-star"></i></span>
+                              <span class="star"><i class="fas fa-star"></i></span>
+                              <span class="star"><i class="fas fa-star"></i></span>
+                            </div>
+                            <div class="price">
+                              <ins>$400.00</ins>
+                              <del>$425.00</del>
+                            </div>
+                            <div class="buttons">
+                              <a href="" class="btn btn-theme btn-theme-transparent btn-wish-list"><i class="fa fa-heart"></i></a>
+                              <a href="" class="btn btn-theme btn-theme-transparent"><i class="fa fa-shopping-cart"></i>Add to Cart </a>
+                              <a href="" class="btn btn-theme btn-theme-transparent btn-compare"><i class="fa fa-heart"></i></a>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="product big-product  thumbnail no-border no-padding" data-toggle="modal" data-target="#myModal" data-id="./img/product-1-big.jpg">
+                          <div class="media">
+                          <a href="#" class="media-link">
+                            <img src="./img/product-1-big.jpg" alt="">
+                            <span class="icon-view"><strong><i class="fa fa-eye"></i></strong></span>
+                            </a>
+                          </div>
+                          <div class="caption text-center">
+                            <h4 class="caption-title"><a href="">Electronic Product Header</a></h4>
+                            <div class="rating">
+                              <span class="star"> <i class="far fa-star"></i></span>
+                              <span class="star"><i class="fas fa-star"></i></span>
+                              <span class="star"><i class="fas fa-star"></i></span>
+                              <span class="star"><i class="fas fa-star"></i></span>
+                              <span class="star"><i class="fas fa-star"></i></span>
+                            </div>
+                            <div class="price">
+                              <ins>$400.00</ins>
+                              <del>$425.00</del>
+                            </div>
+                            <div class="buttons">
+                              <a href="" class="btn btn-theme btn-theme-transparent btn-wish-list"><i class="fa fa-heart"></i></a>
+                              <a href="" class="btn btn-theme btn-theme-transparent"><i class="fa fa-shopping-cart"></i>Add to Cart </a>
+                              <a href="" class="btn btn-theme btn-theme-transparent btn-compare"><i class="fa fa-heart"></i></a>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="pagination-wrapper">
+                      <ul class="pagination">
+                          <li class="disabled"><a href="#"><i class="fa fa-angle-double-left"></i> Previous</a></li>
+                          <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+                          <li><a href="#">2</a></li>
+                          <li><a href="#">3</a></li>
+                          <li><a href="#">4</a></li>
+                          <li><a href="#">Next <i class="fa fa-angle-double-right"></i></a></li>
+                      </ul>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="page-section">
+        <div class="container">
+          <div class="row blocks shop-info-banners ">
+            <div class="col-md-4">
+              <div class="block">
+                <div class="media">
+                    <div class="media-body">
+                      <h4 class="media-heading">Buy 1 Get 1</h4>
+                      Proin dictum elementum velit. Fusce euismod consequat ante.
+                    </div>
+                    <div class="pull-right"><i class="fas fa-gift"></i></div>
+                  </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="block">
+                <div class="media">
+                    <div class="media-body">
+                      <h4 class="media-heading">Buy 1 Get 1</h4>
+                      Proin dictum elementum velit. Fusce euismod consequat ante.
+                    </div>
+                    <div class="pull-right"><i class="fas fa-comments"></i></div>
+                  </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="block">
+                <div class="media">
+                    <div class="media-body">
+                      <h4 class="media-heading">Buy 1 Get 1</h4>
+                      Proin dictum elementum velit. Fusce euismod consequat ante.
+                    </div>
+                    <div class="pull-right"><i class="fas fa-trophy"></i></div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+</div>
+
+
+<footer class="footer">
+  <div class="footer-widgets">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="widget">
+            <div class="widget-title">About Us</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sollicitudin ultrices suscipit. Sed commodo vel mauris vel dapibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <ul class="social-icons">
+              <li><a href=""><i class="fab fa-facebook-f"></i>  </a></li>
+              <li><a href=""><i class="fab fa-twitter"></i></a></li>
+              <li><a href=""><i class="fab fa-instagram"></i></a></li>
+              <li><a href=""><i class="fab fa-telegram-plane"></i></a></li>                    
+            </ul>
+          </div>
+        </div>
+          <div class="col-md-3">
+            <div class="widget widget-tag-cloud">
+                <div class="widget-title">News Letter</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sollicitudin ultrices suscipit.</p>
+                <form action="#">
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Enter Your Mail and Get $10 Cash">
+                  </div>
+                  <div class="buttons form-group">
+                    <button class="btn btn-theme btn-theme-transparents">Subscribe</button>  
+                  </div>
+                </form>
+              </div>
+          </div>
+          <div class="col-md-3">
+            <div class="widget widget-categories">
+              <div class="widget-title">Information</div>
+              <ul>
+                <li><a href=""><i class="fas fa-arrow-circle-right"></i>About Us</a></li>
+                <li><a href=""><i class="fas fa-arrow-circle-right"></i>About Us</a></li>
+                <li><a href=""><i class="fas fa-arrow-circle-right"></i>About Us</a></li>
+                <li><a href=""><i class="fas fa-arrow-circle-right"></i>About Us</a></li>
+                <li><a href=""><i class="fas fa-arrow-circle-right"></i>About Us</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="widget widget-tag-cloud">
+              <div class="widget-title">Item Tags</div>
+              <ul>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Gadgets</a></li>
+                <li><a href="">Electronic</a></li>
+                <li><a href="">Top Sellers</a></li>
+                <li><a href="">shop</a></li>
+                <li><a href="">Top Sellers</a></li>
+                <li><a href="">Supplier</a></li>
+                <li><a href="">Website</a></li>
+                <li><a href="">Isamercan</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-meta">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="copyright">Copyright 2014 BELLA SHOP   |   All Rights Reserved   |   Designed & Developed By</div>
+          <a href="" title="Top HTML Templates">Jthemes Studio</a>
+        </div>
+        <div class="col-sm-6">
+          <div class="payments">
+            <ul>
+              <li><img src="./img/visa.jpg" alt=""></li>
+              <li><img src="./img/paypal.jpg" alt=""></li>
+              <li><img src="./img/mastercard.jpg" alt=""></li>
+              <li><img src="./img/visa.jpg" alt=""></li>
+              <li><img src="./img/paypal.jpg" alt=""></li>
+              <li><img src="./img/mastercard.jpg" alt=""></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+</div>
+<div id="to-top" class="to-top">
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 129 129">
+      <g>
+        <path d="m121.3,34.6c-1.6-1.6-4.2-1.6-5.8,0l-51,51.1-51.1-51.1c-1.6-1.6-4.2-1.6-5.8,0-1.6,1.6-1.6,4.2 0,5.8l53.9,53.9c0.8,0.8 1.8,1.2 2.9,1.2 1,0 2.1-0.4 2.9-1.2l53.9-53.9c1.7-1.6 1.7-4.2 0.1-5.8z"/>
+      </g>
+    </svg>
+</div>
+
+<!-- PRODUCT-MODAL -->
+<div class="modal" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <!-- Modal body -->
+      <div class="modal-body">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <img id="myImage" class="img-responsive" src="" alt="">
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-theme btn-theme-dark btn-callcheckout" data-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+</body> 
+  <script src="./js/bootstrap.min.js"></script>
+s  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <!-- slider -->
+  <script type="text/javascript" src="./js/slick.min.js"></script>
+  <script src="./js/nouislider.js"></script>
+  <script src="js/theme.js" ></script>
+  <script src="js/slider.js"></script>
+  <script src="js/range-slider.js" ></script>
+</html>
